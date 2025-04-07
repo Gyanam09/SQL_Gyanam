@@ -3,8 +3,8 @@ monday
 db.Students.find().pretty()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubham Raj Sharma',
-  location: 'Bihar'
+  name: 'Gyanam Jain',
+  location: 'Madhya Pradesh'
 }
 -- db.Students.updateOne({name:'Shubham Raj Sharma'}, {$set:{'name':'Shubh'})
 -- SyntaxError: Unexpected token, expected "," (1:73)
@@ -42,8 +42,8 @@ db.Students.updateOne({name:'Shubham Raj Sharma'},{$set:{'name':'Shubh'}})
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Gyanam',
+  location: 'Madhya Pradesh'
 }
 db.Students.insertOne({})
 {
@@ -69,8 +69,8 @@ name: "Joy"});
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Gyanam',
+  location: 'Madhya Pradesh'
 }
 {
   _id: ObjectId('67d9c0124528fa06b04ca584')
@@ -88,7 +88,7 @@ name: "Ujjwal"});
 }
 db.Students.insertOne({
 _id :null,
-name: "Shubham"});
+name: "Gyanam"});
 {
   acknowledged: true,
   insertedId: ObjectId('67d9c0c34528fa06b04ca586')
@@ -96,8 +96,8 @@ name: "Shubham"});
 db.Students.find()
 {
   _id: ObjectId('67d9b946726d52f6470e5b76'),
-  name: 'Shubh',
-  location: 'Bihar'
+  name: 'Gyanam',
+  location: 'Madhya Pradesh'
 }
 {
   _id: ObjectId('67d9c0124528fa06b04ca584')
@@ -112,7 +112,7 @@ db.Students.find()
 }
 {
   _id: ObjectId('67d9c0c34528fa06b04ca586'),
-  name: 'Shubham'
+  name: 'Gyanam'
 }
 db.Students.insertOne([
   {title:"NoSQL Distilled",isbn:"0-4696-7030-4"},
